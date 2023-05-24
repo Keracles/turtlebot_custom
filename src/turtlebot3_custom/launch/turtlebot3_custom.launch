@@ -17,5 +17,9 @@
 
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_urdf" args="-urdf -model turtlebot3_$(arg model) -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
 
+    <!-- Start the camera node to capture images from the Gazebo camera -->
+  <node pkg="image_view" type="image_view" name="image_view" respawn="false" output="screen">
+      <remap from="image" to="/camera/image_raw"/>
+  </node>
 
 </launch>
