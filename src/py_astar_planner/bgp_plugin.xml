@@ -1,0 +1,7 @@
+<library path="lib/libpy_astar_planner">
+  <class name="py_astar_planner/PyAstarPlanner" type="py_astar_planner::PyAstarPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>
+      A python astar planner that seeks a path to a goal
+    </description>
+  </class>
+</library>
