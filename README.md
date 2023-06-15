@@ -1,24 +1,29 @@
-# turtlebot_package
-
-# Turtlebot_package
-
-## First Execution
-
-cd ~/turtlebot_custom
-catkin_make
-    ROS_PACKAGE_PATH=/home/kira/turtlebot_custom/src:/opt/ros/noetic/share
+# Turtlebot_package of Group S03
 
 
-## To Launch the map
+# This is the instruction for launching automatic slam :
 
-source ~/turtlebot_custom/devel/setup.bash #Never forget to source the directory
-roslaunch turtlebot3_custom turtlebot3_custom.launch
+## Launch Map
+export TURTLEBOT3_MODEL=burger
+source ~/turtlebot_custom/devel/setup.bash
+roslaunch turtlebot3_custom turtlebot3_world.launch
+
+## Slam
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
+
+## Move Base
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_navigation move_base.launch
+
+## Explorer.py
+export TURTLEBOT3_MODEL=burger
+python3 scripts/explore.py
 
 
-## Launch RViz
+# This is the instruction for launching "fetching boxe" :
 
-roslaunch py_astar_planner turtlebot3_navigation.launch
 
-## Note 
 
-I created in src\turtlebot3_custom a script directory. If you have python scripts, create a new directory there and put them in.
+
+# This is the instruction for yolo detection on slam map :
