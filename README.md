@@ -31,7 +31,7 @@ chmod +x turtlebot_custom/src/turtlebot3_box_following/box_following.py
 roslaunch turtlebot3_box_following camera_and_robot.launch  
 
 
-# This is the instruction for yolo detection on slam map :
+# This is the instruction for yolo detection on slam map : (All the files for yolo are in the yolo directory)
 
 #tutorials followed: https://blog.paperspace.com/yolov7/         https://github.com/leggedrobotics/darknet_ros    
 
