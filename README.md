@@ -22,13 +22,13 @@ python3 scripts/explore.py
 
 
 # This is the instruction for launching "fetching boxe" :
-Depending on the speed of your pc, it might not work the first time we start it since we need lots of things to load.
-If it's not working the first time, close the program and restart it.
-Commands to do if package name is turtlebot3_box_following :
-export TURTLEBOT3_MODEL=burger
-catkin_make
-chmod +x turtlebot_custom/src/turtlebot3_box_following/box_following.py
-roslaunch turtlebot3_box_following camera_and_robot.launch
+Depending on the speed of your pc, it might not work the first time we start it since we need lots of things to load.  
+If it's not working the first time, close the program and restart it.  
+Commands to do if package name is turtlebot3_box_following :  
+export TURTLEBOT3_MODEL=burger  
+catkin_make  
+chmod +x turtlebot_custom/src/turtlebot3_box_following/box_following.py  
+roslaunch turtlebot3_box_following camera_and_robot.launch  
 
 
 # This is the instruction for yolo detection on slam map :
