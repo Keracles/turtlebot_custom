@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #----------------------------------------------------------------------------
-# Created By  : Luca Obwegs
+# Created By  : Khéo Albarede-Barte
 # Created Date: 03.06.2023
 # version ='1.1'
 # CS470 Introduction to Artificial Intelligence: final project
